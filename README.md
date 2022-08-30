@@ -1,4 +1,4 @@
-# Maggie Shan's Portfolio Website
+# Portfolio site
 V4 2022
 
 This site is a means to: explore different frontend frameworks/libraries, showcase my skills and projects, and play around with my own creativity. 
