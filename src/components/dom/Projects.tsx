@@ -10,13 +10,12 @@ const Container = styled.div`
   justify-content: center;
 `;
 
-const Homepage = () => {
+const About = () => {
   return (
     <>
     <Container>
       <div style={{ marginBottom: "3rem" }}>
-        <Title>Maggie</Title>
-        <Title style={{ margin: 0 }}>Shan</Title>
+        <Title>projects</Title>
       </div>
       <div>
         <Subtitle>Welcome to my sandbox!</Subtitle>
@@ -27,5 +26,5 @@ const Homepage = () => {
   );
 };
   
-export default Homepage;
+export default About;
   

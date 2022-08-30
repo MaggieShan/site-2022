@@ -29,6 +29,7 @@ const CanvasLayout = ({ children }: CanvasLayoutProps) => {
             style={{
                 position: "absolute",
                 top: 0,
+                height: "100%",
                 touchAction: "none",
                 // color from blender world theme
                 backgroundColor: "#574CD1",
