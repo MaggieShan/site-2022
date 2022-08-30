@@ -1,13 +1,14 @@
 import React, { useRef, useState, useEffect } from "react";
-import { useFrame, extend } from "@react-three/fiber";
+import { useFrame, extend, useStore } from "@react-three/fiber";
 import type { Mesh } from "three";
-import { shaderMaterial } from "@react-three/drei";
+import { Preload, OrbitControls, shaderMaterial } from "@react-three/drei";
 import * as THREE from "three";
 
 /* @ts-ignore */
 import vertex from "../shaders/glsl/vertex.glsl";
 /* @ts-ignore */
 import frag from "../shaders/glsl/frag.glsl";
+import { Controls } from "../../layout/CanvasLayout/CanvasLayout";
 
 const ColorShiftMaterial = shaderMaterial(
     {
@@ -27,17 +28,15 @@ extend({ ColorShiftMaterial });
 
 interface BoxProps {
     color: string;
-    hoverColor: string;
 }
 
 const Box = (props: BoxProps) => {
     let color = props.color;
-    let hoverColor = props.hoverColor;
     // This reference will give us direct access to the mesh
     const mesh = useRef<Mesh>(null!);
 
     // Set up state for the hovered and active state
-    const [hovered, setHover] = useState(false);
+
     const [active, setActive] = useState(false);
 
     // Rotate mesh every frame, this is outside of React without overhead
@@ -51,11 +50,10 @@ const Box = (props: BoxProps) => {
             ref={mesh}
             scale={active ? [1.5, 1.5, 1.5] : [1, 1, 1]}
             onClick={(event) => setActive(!active)}
-            onPointerOver={(event) => setHover(true)}
-            onPointerOut={(event) => setHover(false)}
         >
+            {/* <OrbitControls /> */}
             <boxBufferGeometry args={[1, 1, 1]} />
-            <meshStandardMaterial color={hovered ? hoverColor : color} />
+            <meshStandardMaterial color={color} />
         </mesh>
     );
 };

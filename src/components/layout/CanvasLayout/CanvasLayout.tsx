@@ -8,7 +8,7 @@ interface CanvasLayoutProps {
     children: ReactNode;
 }
 
-const Controls = () => {
+export const Controls = () => {
     const dom = useStore((state) => state.dom);
     const control = useRef(null);
 
@@ -31,7 +31,7 @@ const CanvasLayout = ({ children }: CanvasLayoutProps) => {
                 top: 0,
                 touchAction: "none",
                 // color from blender world theme
-                backgroundColor: "rgb(50,50,50)",
+                backgroundColor: "#574CD1",
             }}
             // Uncomment when using
             // depth texture in shaders
@@ -46,9 +46,9 @@ const CanvasLayout = ({ children }: CanvasLayoutProps) => {
             // Delete above when ready for own project
         >
             <Preload all />
-            <Controls />
+            {/* <Controls /> */}
             {children}
-            <Perf position={"bottom-left"} />
+            {/* <Perf position={"bottom-left"} /> */}
         </Canvas>
     );
 };

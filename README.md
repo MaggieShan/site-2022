@@ -1,25 +1,13 @@
-# :ice_cube: Next Three Fiber Starter
+# Maggie Shan's Portfolio Website
+V4 2022
 
-### :desktop_computer: Live Demo :
+This site is a means to: explore different frontend frameworks/libraries, showcase my skills and projects, and play around with my own creativity. 
 
-[![image](./public/Screen%20Shot%202022-05-06%20at%207.06.39%20AM.png)](https://next-three-fiber-beta.vercel.app/)
+Every year I like to revamp my site with new designs and frameworks to further develop the new skills/tools I've learned. In this version, I specifically explore: 
 
-:warning:This is my official r3f-next starter. Had a [previous](https://github.com/aliiscript/next-r3f-starter) one but code was all over the place and wasnt happy with organization and have also learned alot more, will leave up tho for those who are using it :warning:
+* 3D modeling with ThreeJS (React Three Fiber) and Blender
+* Styled Components 
 
-## Minimal react three fiber Starter using [Next.js](https://nextjs.org/) with TypeScript and Styled Components
 
-## How To Use
-
-Run the following command to create a new project with this Starter:
-
-```
-yarn create next-app [project name] -e https://github.com/aliiscript/next-three-fiber
-# or
-npx create-next-app [project name] -e https://github.com/aliiscript/next-three-fiber
-```
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Notes
+* Using Next Three Fiber Starter: https://github.com/aliiscript/next-r3f-starter 
