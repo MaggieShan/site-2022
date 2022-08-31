@@ -27,7 +27,6 @@ const Home: NextPage = () => {
   // dom components go here
   const DOM = () => {
     return (
-      // @ts-expect-error
       <ThemeProvider theme={theme}>
         <DomLayout>
             <div ref={main} style={{ height: '100vh' }} >
@@ -51,6 +50,7 @@ const Home: NextPage = () => {
           <pointLight position={[10, 10, 10]} />
           <Box color={theme.yellow} />
         </View>
+        {/* @ts-expect-error */}
         <View track={about}>
           <ambientLight />
           <pointLight position={[10, 10, 10]} />
