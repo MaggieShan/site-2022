@@ -32,7 +32,7 @@ const CanvasLayout = ({ children }: CanvasLayoutProps) => {
                 height: "100%",
                 touchAction: "none",
                 // color from blender world theme
-                backgroundColor: "#574CD1",
+                backgroundColor: "#4D38CA",
             }}
             // Uncomment when using
             // depth texture in shaders

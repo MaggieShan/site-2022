@@ -9,9 +9,9 @@ import { useRef } from "react";
 import About from "../components/dom/About";
 
 const theme = {
-	bg: "#574CD1",
+	bg: "#4438CA",
 	text: "#ffffff",
-	yellow: "#FCED90",
+	yellow: "#FFDE88",
 };
 
 const Container = styled.div`
